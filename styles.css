@@ -1,16 +1,20 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    font-family: "Copperplate", Fantasy;
 }
 .calculator {
     margin: 100px auto;
     width: 400px;
+    border: 10px solid rgba(47,47,47,1);
+    background-color: black;
 }
 
 .display {
     background-color: rgb(190, 190, 190);
     padding: 20px;
-    margin: 30px;
+    height: 100px;
+    border-bottom: 3px solid black;
 }
 
 .display p {
@@ -23,18 +27,18 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 10px;
 }
 
 .key {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80px;
-    height: 80px;
+    width: 25%;
+    padding: 20px;
     background-color: rgb(182, 182, 182);
-    border-radius: 50%;
     font-size: 30px;
+    border-radius: 5px;
+    border: 1px solid black;
 }
 
 .key:hover {
@@ -43,12 +47,18 @@
     transition: .2s;
 }
 
+.oper {
+    background-color: rgb(230, 149, 0);
+}
+
 .equal {
     background-color: rgb(71, 119, 0);
-    color: white;
+}
+
+.oper:focus {
+    opacity: .8;
 }
 
 .clear {
-    background-color: rgb(131, 0, 0);
-    color: white;
+    background-color: dodgerblue;
 }

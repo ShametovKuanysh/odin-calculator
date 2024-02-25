@@ -8,29 +8,29 @@
     <body>
         <div class="calculator">
             <div class="display">
-                <p id="dis">ss</p>
+                <p id="dis"></p>
             </div>
             <div class="keys">
-                <div class="key clear" onclick="action('C')">C</div>
-                <div class="key" onclick="action('del')">⌫</div>
-                <div class="key" onclick="action('%')">%</div>
-                <div class="key" onclick="action('/')">/</div>
-                <div class="key" onclick="action('7')">7</div>
-                <div class="key" onclick="action('8')">8</div>
-                <div class="key" onclick="action('9')">9</div>
-                <div class="key" onclick="action('*')">x</div>
-                <div class="key" onclick="action('4')">4</div>
-                <div class="key" onclick="action('5')">5</div>
-                <div class="key" onclick="action('6')">6</div>
-                <div class="key" onclick="action('-')">-</div>
-                <div class="key" onclick="action('1')">1</div>
-                <div class="key" onclick="action('2')">2</div>
-                <div class="key" onclick="action('3')">3</div>
-                <div class="key" onclick="action('+')">+</div>
-                <div class="key" onclick="action('sign')">+/-</div>
-                <div class="key" onclick="action('0')">0</div>
-                <div class="key" onclick="action(',')">,</div>
-                <div class="key equal" onclick="action('=')">=</div>
+                <button class="key clear" onclick="action('C')">C</button>
+                <button class="key clear" onclick="action('Backspace')"><-</button>
+                <button class="key clear" id="%" onclick="action('%')">%</button>
+                <button class="key oper" id="/" onclick="action('/')">/</button>
+                <button class="key" onclick="action('7')">7</button>
+                <button class="key" onclick="action('8')">8</button>
+                <button class="key" onclick="action('9')">9</button>
+                <button class="key oper" id="*" onclick="action('*')">x</button>
+                <button class="key" onclick="action('4')">4</button>
+                <button class="key" onclick="action('5')">5</button>
+                <button class="key" onclick="action('6')">6</button>
+                <button class="key oper" id="-" onclick="action('-')">-</button>
+                <button class="key" onclick="action('1')">1</button>
+                <button class="key" onclick="action('2')">2</button>
+                <button class="key" onclick="action('3')">3</button>
+                <button class="key oper" id="+" onclick="action('+')">+</button>
+                <button class="key" onclick="action('sign')">+/-</button>
+                <button class="key" onclick="action('0')">0</button>
+                <button class="key" id="." onclick="action('.')">.</button>
+                <button class="key oper" onclick="action('=')">=</button>
             </div>
         </div>
         <script src="main.js"></script>
